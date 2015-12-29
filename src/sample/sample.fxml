@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<BorderPane prefHeight="368.0" prefWidth="503.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <top>
+      <Button fx:id="printButton1" mnemonicParsing="false" onAction="#printButtonPressed" text="Print" BorderPane.alignment="CENTER_RIGHT" />
+   </top>
+   <center>
+      <VBox fx:id="content" fillWidth="false" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+              <GridPane fx:id="gridPane" alignment="center" hgap="10" vgap="10">
+                  <columnConstraints>
+                      <ColumnConstraints />
+                      <ColumnConstraints />
+                      <ColumnConstraints />
+                  </columnConstraints>
+                  <rowConstraints>
+                      <RowConstraints />
+                      <RowConstraints />
+                      <RowConstraints />
+                  </rowConstraints>
+                  <children>
+                      <DatePicker promptText="Дата" GridPane.rowIndex="2" />
+                      <TextField promptText="ГВС" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                      <TextField promptText="ХВС" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                      <Label text="Пред дата" GridPane.rowIndex="1" />
+                      <Label text="Пред ГВС" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                      <Label text="Пред ХВС" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                      <Label text="ГВС" GridPane.columnIndex="1" />
+                      <Label text="ХВС" GridPane.columnIndex="2" />
+                  </children>
+              </GridPane>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

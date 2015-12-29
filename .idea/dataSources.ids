@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="CommExp" uuid="cc565f27-a0e1-4049-a6b5-7aa30681c535">
+    <database-info product="MySQL" version="5.6.21-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.33 ( Revision: alexander.soklakov@oracle.com-20140908134200-8ukofe1izi0r2b63 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="commexp"/>
+    <table name="readings" schema="" catalog="commexp" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="date" sqlType="DATE" precision="10" scale="0" nullable="false" jdbcType="91" remarks="0JTQsNGC0LA="/>
+      <column name="electricityreading" sqlType="DECIMAL" precision="10" scale="1" nullable="true" jdbcType="3" remarks="0J/QvtC60LDQt9Cw0L3QuNGPINGB0YfRkdGC0YfQuNC60LAg0Y3Qu9C10LrRgtGA0LjRh9C10YHRgtCy0LA="/>
+      <column name="electricitytariff" sqlType="DECIMAL" precision="5" scale="2" nullable="true" jdbcType="3" remarks="0KLQsNGA0LjRhCDQvdCwINGN0LvQtdC60YLRgNC+0Y3QvdC10YDQs9C40Y4="/>
+      <column name="coldwaterreading" sqlType="DECIMAL" precision="8" scale="3" nullable="true" jdbcType="3" remarks="0J/QvtC60LDQt9Cw0L3QuNGPINGB0YfRkdGC0YfQuNC60LAg0YXQvtC70L7QtNC90L7QuSDQstC+0LTRiw=="/>
+      <column name="coldwatertariff" sqlType="DECIMAL" precision="5" scale="2" nullable="true" jdbcType="3" remarks="0KLQsNGA0LjRhCDQvdCwINGF0L7Qu9C+0LTQvdGD0Y4g0LLQvtC00YM="/>
+      <column name="hotwaterreading" sqlType="DECIMAL" precision="8" scale="3" nullable="true" jdbcType="3" remarks="0J/QvtC60LDQt9Cw0L3QuNGPINGB0YfRkdGC0YfQuNC60LAg0LPQvtGA0Y/Rh9C10Lkg0LLQvtC00Ys="/>
+      <column name="hotwatertariff" sqlType="DECIMAL" precision="5" scale="2" nullable="true" jdbcType="3" remarks="0KLQsNGA0LjRhCDQvdCwINCz0L7RgNGP0YfRg9GOINCy0L7QtNGD"/>
+      <column name="watersinktariff" sqlType="DECIMAL" precision="5" scale="2" nullable="true" jdbcType="3" remarks="0KLQsNGA0LjRhCDQvdCwINCy0L7QtNC+0L7RgtCy0LXQtNC10L3QuNC1"/>
+      <column name="phone" sqlType="DECIMAL" precision="8" scale="2" nullable="true" jdbcType="3" remarks="0KLQtdC70LXRhNC+0L0="/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <index name="date_UNIQUE" unique="true" columns="date"/>
+    </table>
+  </data-source>
+</component>
